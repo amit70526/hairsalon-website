@@ -681,9 +681,9 @@ h6 {
     .about-img .img-text {
         display: none;
     }
-#testimonial{
+/* #testimonial{
     display: none;;
-}
+} */
     .about-text {
         font-size: 25px;
         font-weight: 600;
