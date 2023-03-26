@@ -649,10 +649,19 @@ h6 {
         font-size: 30px;
     }
     .main-heading {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 600;
         line-height: 1.2;
         color: #fff;
     }
+    .home .icon-text {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: var(--white);
+        margin-top: 10px;
+    }
+
 }
 
