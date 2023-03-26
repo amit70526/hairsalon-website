@@ -662,6 +662,8 @@ h6 {
         color: var(--white);
         margin-top: 10px;
     }
-
+    .btn-swiper{
+        display: none;
+    }
 }
 
