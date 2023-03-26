@@ -555,11 +555,14 @@ h6 {
     margin-top: 20px;
 }
 
-.team-card .gap{
+.team-card .gap {
     margin-bottom: 0px;
 }
 
-
+#footer .gap {
+    margin-bottom:0px;
+    
+}
 
 /*******************responsive***********************/
 @media only screen and (max-width :1024px) {
@@ -622,38 +625,46 @@ h6 {
     .navbar .btn-link {
         display: none;
     }
-     
-    .col-6{
+
+    .col-6 {
         width: 100%;
     }
-    .col-4{
+
+    .col-4 {
         width: 100%;
     }
-    .col-3{
+
+    .col-3 {
         width: 100%;
     }
-    .team-card .gap{
+
+    .team-card .gap {
         margin-bottom: 20px;
     }
+
     .price-service-right {
         width: 100%;
     }
+
     .price-service-left {
         width: 100%;
     }
 
-    .d-flex{
+    .d-flex {
         flex-direction: column;
     }
+
     header .logo {
         font-size: 30px;
     }
+
     .main-heading {
         font-size: 20px;
         font-weight: 600;
         line-height: 1.2;
         color: #fff;
     }
+
     .home .icon-text {
         font-size: 15px;
         font-weight: 500;
@@ -662,8 +673,33 @@ h6 {
         color: var(--white);
         margin-top: 10px;
     }
-    .btn-swiper{
+
+    .btn-swiper {
         display: none;
     }
-}
 
+    .about-img .img-text {
+        display: none;
+    }
+
+    .about-text {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+
+    .since .col-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .price-plan-heading {
+        padding: 0;
+    }
+
+    #footer .gap {
+        margin-bottom: 20px;
+        
+    }
+
+}
