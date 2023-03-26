@@ -623,7 +623,13 @@ h6 {
         display: block;
         margin: 20px;
     }
-
+    .slide1 {
+        height: 100%;
+        min-height: 500px;
+    }
+    .slide2 {
+        min-height:500px;
+    }
     .navbar .btn-link {
         display: none;
     }
