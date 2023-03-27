@@ -1,29 +1,51 @@
 /******************hero slider***************** */
 var swiper = new Swiper(".home-slider", {
-    autoplay:true,
-    loop:true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+  autoplay:true,
+  loop:true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
-  let navbar = document.querySelector('header .navbar');
+let navbar = document.querySelector('header .navbar');
 let menuBtn = document.querySelector('#menu-btn');
 
 menuBtn.onclick = () =>{
-    menuBtn.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
+  menuBtn.classList.toggle('fa-times');
+  navbar.classList.toggle('active');
 }
 
 window.onscroll = () => {
-    menuBtn.classList.remove('fa-times');
-    navbar.classList.remove('active');
+  menuBtn.classList.remove('fa-times');
+  navbar.classList.remove('active');
 }
 
 
-/*testimonial slider*/
-var swiper = new Swiper(".mySwiper", {
-  effect: "cards",
-  grabCursor: true,
+$('.testimonial').slick({
+dots: true,
+infinite: false,
+speed: 300,
+autoplay:true,
+loop:true,
+slidesToShow: 3,
+slidesToScroll: 1,
+responsive: [
+  {
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      infinite: true,
+      dots: true
+    }
+  },
+  {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }
+]
 });

@@ -439,47 +439,47 @@ h6 {
 }
 
 /****testimonial *******/
-#testimonial .swiper {
-    width: 100%;
-    max-width: 240px;
-    margin: 0 auto;
-    height: 320px;
+#testimonial .img-text img {
+    width: 80px;
+    height:80px;
+    border-radius: 100px;
+    border: 2px solid var(--primary);
 }
-
-#testimonial .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 18px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
+#testimonial .img-text .text {
+    margin-left: 15px;
 }
-
-
-#testimonial .swiper-slide {
+#testimonial .img-text h6 {
+    padding-bottom: 0px;
+}
+#testimonial .img-text p {
+    color: var(--primary);
+}
+#testimonial .img-text  {
+    justify-content: unset;
+}
+.testimonial-slider{
+    padding: 20px;
     background-color: var(--secondary);
 }
-
-
-#testimonial .swiper-slide img {
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
+.testimonial-slider .row{
+    flex-wrap: nowrap;
 }
-
-.testimonial-items {
-    padding: 0px 10px;
+.slick-dots li button::before {
+    font-size: 0;
 }
-
-.testimonial-items img {
-    margin-top: 20px;
+.slick-dots li {
+    width: 20px;
+    height: 10px;
+   background-color: var(--white);
+   border-radius: 5px;
 }
-
-#testimonial .swiper {
-    margin-top: 20px;
+.slick-dots .slick-active{
+    background-color: var(--primary);
+    width: 30px;
 }
-
+.slick-dots {
+    bottom: -30px;
+}
 /********footer**********/
 .footer {
     padding: 30px 0px;
@@ -557,15 +557,16 @@ h6 {
     margin-top: 20px;
 }
 
-.team-card .gap {
+.team-card .gap{
     margin-bottom: 0px;
 }
 
-#footer .gap {
+.footer .gap{
     margin-bottom:0px;
-    
 }
-
+#about-us .gap{
+    margin-bottom: 0px;
+}
 /*******************responsive***********************/
 @media only screen and (max-width :1024px) {
     .navbar .btn-link {
@@ -623,92 +624,89 @@ h6 {
         display: block;
         margin: 20px;
     }
-    .slide1 {
-        min-height: 500px;
-    }
-    .slide2 {
-        min-height:500px;
-    }
+
     .navbar .btn-link {
         display: none;
     }
-
-    .col-6 {
+     
+    .col-6{
         width: 100%;
     }
-
-    .col-4 {
+    .col-4{
         width: 100%;
     }
-
-    .col-3 {
+    .col-3{
         width: 100%;
     }
-
-    .team-card .gap {
+    .team-card .gap{
         margin-bottom: 20px;
     }
-
     .price-service-right {
         width: 100%;
     }
-
     .price-service-left {
         width: 100%;
     }
 
-    .d-flex {
+    .d-flex{
         flex-direction: column;
     }
-
     header .logo {
-        font-size: 30px;
+        font-size: 25px;
     }
-
     .main-heading {
         font-size: 20px;
-        font-weight: 600;
-        line-height: 1.2;
+        font-weight: 500;
+        line-height: 1.2;  
         color: #fff;
     }
-
     .home .icon-text {
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 20px;
-        text-transform: capitalize;
-        color: var(--white);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
         margin-top: 10px;
     }
-
     .btn-swiper {
-        display: none;
+        width: 30px;
+        height: 30px;
     }
-
+    .btn-swiper:after {
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--white);
+    }
+    header {
+        padding: 15px 0px;
+    }
     .about-img .img-text {
-        display: none;
+        padding: 10px 10px;
     }
-/* #testimonial{
-    display: none;;
-} */
     .about-text {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 600;
-        line-height: 32px;
+        line-height: 30px;
+        text-transform: capitalize;
+        color: var(--white);
+        margin-bottom: 10px;
     }
-
-    .since .col-6 {
-        width: 100%;
+    .footer .gap{
         margin-bottom: 20px;
     }
-
+    #about-us .col-6{
+        width:100%;
+    }
+    .margin-bottom {
+        margin-bottom: 10px;
+    }
+    #about-us .gap{
+        margin-bottom: 20px;
+    }
+    .price-service-left {
+        padding: 20px 20px 20px 20px;
+    }
     .price-plan-heading {
-        padding: 0;
+        padding-top: 30px;
+        padding-bottom: 20px;
     }
-
-    #footer .gap {
-        margin-bottom: 20px;
-        
-    }
-
 }
+
