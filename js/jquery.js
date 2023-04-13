@@ -24,8 +24,7 @@ window.onscroll = () => {
 
 $('.testimonial').slick({
 dots: true,
-infinite: false,
-centerMode: true,
+infinite:true,
 speed: 300,
 autoplay:true,
 loop:true,
