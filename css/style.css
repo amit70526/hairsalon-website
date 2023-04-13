@@ -480,6 +480,12 @@ h6 {
 .slick-dots {
     bottom: -30px;
 }
+
+.testimonial{
+    width: 100%;
+    display: block;
+    position: relative;
+}
 /********footer**********/
 .footer {
     padding: 30px 0px;
