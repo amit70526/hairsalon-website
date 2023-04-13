@@ -158,7 +158,6 @@ header .logo i {
     background-image: url('../img/carousel-3.jpg');
     width: 100%;
     min-height: 100vh;
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -716,6 +715,13 @@ h6 {
     }
     section{
         padding-top:50px;
+    }
+    .slide2 {
+        min-height: 50vh;
+    }
+    
+    .slide1 {
+        min-height: 50vh;
     }
 }
 
